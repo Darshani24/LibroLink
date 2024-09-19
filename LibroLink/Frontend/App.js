@@ -8,6 +8,7 @@ import HomePage from './screens/splash';
 import LoginPage from './screens/Login';
 import SearchBook from './screens/SearchBook';
 import BookDetails from './screens/BookDetails';
+import Category from './screens/Category';
 
 
 const Stack= createNativeStackNavigator()
@@ -22,9 +23,14 @@ export default function App() {
           <Stack.Screen name="BookS" component={SearchBook}/>
           <Stack.Screen name="BookD" component={BookDetails}/>
          
+         
 
         </Stack.Navigator>
      </NavigationContainer>
+
+    // <NavigationContainer>
+    //   <Category/>
+    // </NavigationContainer>
   
     );
 
